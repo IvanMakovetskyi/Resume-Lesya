@@ -31,6 +31,7 @@ html {
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
+  letter-spacing: 0.1em;
 }
 
 /*
@@ -49,12 +50,12 @@ body {
 Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
 body {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: Lato, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
 a {
   text-decoration: none;
-  font-family: Roboto;
+  font-family: Lato;
 }
 
 ul {
@@ -279,5 +280,85 @@ p {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
+}
+
+@media screen and (min-width: 750px) {
+  .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.sidebar {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#191819), color-stop(88.1664%, #191819), to(rgba(25, 24, 25, 0)));
+  background-image: linear-gradient(to top, #191819 0%, #191819 88.1664%, rgba(25, 24, 25, 0) 100%);
+}
+
+@media screen and (min-width: 750px) {
+  .sidebar {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .sidebar {
+    width: 400px;
+  }
+}
+
+.sidebar__photo {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.me {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+.me__name {
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 9px;
+  color: #b29271;
+}
+
+.me__profession {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.contacts__element {
+  width: 245px;
+  text-align: start;
+  margin: 0 auto;
+}
+
+.contacts__element:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.contacts__icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  fill: #b29271;
+}
+
+.contacts__link {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */
