@@ -3,99 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <title>My resume</title>
 </head>
 <body>
-    <div class="sidebar">
-        <img src="" alt="my-photo" class="sidebar__photo"
-        Photo
-        >
-        <section class="me">
-            <h1 class="me__name">Lesia Drannikova</h1>
-            <h2 class="me__profession"> Kto-to</h2>
-            <ul class="me__contacts contacts">
-                <li class="contacts__element"><a href="" class="contacts__link"></a></li>
-                <li class="contacts__element"><a href="" class="contacts__link"></a></li>
-                <li class="contacts__element"><a href="" class="contacts__link"></a></li>
-                <li class="contacts__element"><a href="" class="contacts__link"></a></li>
-            </ul>
-        </section>
-    </div>
-    <div class="main">
-        <section class="about-me">
-            <h3 class="about-me__title">About Me</h3>
-            <p class="about-me__text"></p>
-        </section>
-        <section class="experience">
-            <h3 class="experience__title">Experience</h3>
-            <ul class="experience__list">
-                <li class="experience__element">
-                    <h4 class="experience__year"></h4>
-                    <p class="experience__text"></p>
+    <div class="content">
+        <div class="sidebar">
+            <img src="./img/My-photo.jpg" alt="my-photo" class="sidebar__photo"
+            Photo
+            >
+            <section class="me">
+                <h1 class="me__name">Lesya Drannikova</h1>
+                <h2 class="me__profession">GRAPHIC DESIGN</h2>
+                <ul class="me__contacts contacts">
+                    <li class="contacts__element">
+                        <svg class="contacts__icon">
+                            <use href="./img/symbol-defs.svg#mail"></use>
+                        </svg>
+                        <a href="" class="contacts__link">YOURNAME@GMAIL.COM</a>
+                    </li>
+                    <li class="contacts__element">
+                        <svg class="contacts__icon">
+                            <use href="./img/symbol-defs.svg#phone"></use>
+                        </svg>
+                        <a href="" class="contacts__link">+51 123 456 78</a>
+                    </li>
+                    <li class="contacts__element">
+                        <svg class="contacts__icon">
+                            <use href="./img/symbol-defs.svg#location"></use>
+                        </svg>
+                        <a href="" class="contacts__link">LOREM STREET 123</a>
+                    </li>
+                    <li class="contacts__element">
+                        <svg class="contacts__icon">
+                            <use href="./img/symbol-defs.svg#internet"></use>
+                        </svg>
+                        <a href="" class="contacts__link">YOURNAME.COM</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="main">
+            <section class="about-me">
+                <h3 class="about-me__title">About Me</h3>
+                <p class="about-me__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cumque ut ratione in vero deleniti, architecto at quos doloremque aliquid, ipsam dolore! Similique nihil quis ipsa aliquam laborum tempore incidunt!</p>
+            </section>
+            <section class="experience">
+                <h3 class="experience__title">Experience</h3>
+                <ul class="experience__list">
+                    <li class="experience__element">
+                        <h4 class="experience__year"></h4>
+                        <p class="experience__text"></p>
+                    </li>
+                    <li class="experience__element">
+                        <h4 class="experience__year"></h4>
+                        <p class="experience__text"></p>
+                    </li>
+                    <li class="experience__element">
+                        <h4 class="experience__year"></h4>
+                        <p class="experience__text"></p>
+                    </li>
+                    <li class="experience__element">
+                        <h4 class="experience__year"></h4>
+                        <p class="experience__text"></p>
+                    </li>
+                </ul>
+            </section>
+            <section class="skills">
+                <h3 class="skills__title">Skills</h3>
+                <ul class="skills__merits merits"><li class="merits__element">
+                    <p class="merits__text"></p>
                 </li>
-                <li class="experience__element">
-                    <h4 class="experience__year"></h4>
-                    <p class="experience__text"></p>
+                <li class="merits__element">
+                    <p class="merits__text"></p>
                 </li>
-                <li class="experience__element">
-                    <h4 class="experience__year"></h4>
-                    <p class="experience__text"></p>
+                <li class="merits__element">
+                    <p class="merits__text"></p>
                 </li>
-                <li class="experience__element">
-                    <h4 class="experience__year"></h4>
-                    <p class="experience__text"></p>
+                <li class="merits__element">
+                    <p class="merits__text"></p>
                 </li>
-            </ul>
-        </section>
-        <section class="skills">
-            <h3 class="skills__title">Skills</h3>
-            <ul class="skills__merits merits"><li class="merits__element">
-                <p class="merits__text"></p>
-            </li>
-            <li class="merits__element">
-                <p class="merits__text"></p>
-            </li>
-            <li class="merits__element">
-                <p class="merits__text"></p>
-            </li>
-            <li class="merits__element">
-                <p class="merits__text"></p>
-            </li>
-            </ul>
-            <ul class="skills__languages languages"><li class="languages__element">
-                <p class="languages__text"></p>
-                <div class="languages__progress"></div>
-            </li>
-            <li class="languages__element">
-                <p class="languages__text"></p>
-                <div class="languages__progress"></div>
-            </li>
-            <li class="languages__element">
-                <p class="languages__text"></p>
-                <div class="languages__progress"></div>
-            </li></ul>
-        </section>
-        <section class="education">
-            <h3 class="education__title">Experience</h3>
-            <ul class="education__list">
-                <li class="education__element">
-                    <h4 class="education__year"></h4>
-                    <p class="education__text"></p>
+                </ul>
+                <ul class="skills__languages languages"><li class="languages__element">
+                    <p class="languages__text"></p>
+                    <div class="languages__progress"></div>
                 </li>
-                <li class="education__element">
-                    <h4 class="education__year"></h4>
-                    <p class="education__text"></p>
+                <li class="languages__element">
+                    <p class="languages__text"></p>
+                    <div class="languages__progress"></div>
                 </li>
-                <li class="education__element">
-                    <h4 class="education__year"></h4>
-                    <p class="education__text"></p>
-                </li>
-                <li class="education__element">
-                    <h4 class="education__year"></h4>
-                    <p class="education__text"></p>
-                </li>
-            </ul>
-        </section>
+                <li class="languages__element">
+                    <p class="languages__text"></p>
+                    <div class="languages__progress"></div>
+                </li></ul>
+            </section>
+            <section class="education">
+                <h3 class="education__title">Education</h3>
+                <ul class="education__list">
+                    <li class="education__element">
+                        <h4 class="education__year"></h4>
+                        <p class="education__text"></p>
+                    </li>
+                    <li class="education__element">
+                        <h4 class="education__year"></h4>
+                        <p class="education__text"></p>
+                    </li>
+                    <li class="education__element">
+                        <h4 class="education__year"></h4>
+                        <p class="education__text"></p>
+                    </li>
+                    <li class="education__element">
+                        <h4 class="education__year"></h4>
+                        <p class="education__text"></p>
+                    </li>
+                </ul>
+            </section>
+        </div>
     </div>
 </body>
 </html>
