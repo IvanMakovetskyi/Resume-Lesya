@@ -9,9 +9,13 @@
 
 main{
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .flex{
+    margin-bottom: 30px;
     @media screen and (min-width: 750px){
         display: flex;
     }

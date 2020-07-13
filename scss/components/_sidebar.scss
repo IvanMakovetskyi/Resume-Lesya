@@ -53,9 +53,20 @@
     margin-bottom: 10px;
 }
 
+.contacts__element:focus .contacts__link,
+.contacts__element:hover .contacts__link{
+    color: #865a3e;
+}
+
+.contacts__element:focus .contacts__icon,
+.contacts__element:hover .contacts__icon{
+    fill: #865a3e;
+}
+
 .contacts__icon{
     width: 20px;
     height: 20px;
+    transition: 250ms $timing-function;
 
     margin-right: 15px;
 
@@ -65,6 +76,7 @@
 .contacts__link{
     font-size: 14px;
     font-weight: bold;
+    transition: 250ms $timing-function;
 
     color: $white-color;
 }
