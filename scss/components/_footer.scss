@@ -1,0 +1,44 @@
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: #865a3e;
+}
+
+.footer__ss-list{
+    @extend %flexCenter;
+    height: 100%;
+    width: 100%;
+}
+
+.footer__ss-element:not(:last-child){
+    margin-right: 10px;
+}
+
+.footer__ss-link{
+    @extend %flexCenter;
+}
+
+.footer__ss-radius{
+    @extend %flexCenter;
+    width: 20px;
+    height: 20px;
+    background-color: $main-text-color;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.footer__ss-icon{
+    width: 14px;
+    height: 15px;
+
+    fill: #865a3e;
+}
+
+.footer__ss-text{
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+
+    color: #fefefe;
+}

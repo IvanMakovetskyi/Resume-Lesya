@@ -1,7 +1,12 @@
 .education{
     position: relative;
-    padding-left: 30px;
     margin-bottom: 30px;
+    text-align: center;
+
+    @media screen and (min-width:750px){
+        text-align: start;
+        padding-left: 30px;
+    }
 }
 
 .education__title{

@@ -282,6 +282,18 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+.footer__ss-list, .footer__ss-link, .footer__ss-radius {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .content {
   background-color: #d4d4d4;
 }
@@ -380,6 +392,13 @@ main {
 .about-me {
   max-width: 100%;
   margin-bottom: 30px;
+  text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+  .about-me {
+    text-align: start;
+  }
 }
 
 .about-me__title {
@@ -409,8 +428,17 @@ main {
 
 .experience {
   position: relative;
-  width: calc(100%/2);
-  padding-right: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 750px) {
+  .experience {
+    width: calc(100%/2);
+    text-align: start;
+    padding-right: 30px;
+    margin-bottom: 0px;
+  }
 }
 
 .experience__title {
@@ -438,13 +466,19 @@ main {
 
 .experience__list::after {
   content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  right: -30px;
-  height: 100%;
-  width: 1px;
-  background-color: #b29271;
+  display: none;
+}
+
+@media screen and (min-width: 750px) {
+  .experience__list::after {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -30px;
+    height: 100%;
+    width: 1px;
+    background-color: #b29271;
+  }
 }
 
 .experience__element:not(:last-child) {
@@ -466,8 +500,15 @@ main {
 
 .skills {
   position: relative;
-  padding-left: 30px;
   margin-bottom: 30px;
+  text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+  .skills {
+    text-align: start;
+    padding-left: 30px;
+  }
 }
 
 .skills__title {
@@ -513,6 +554,14 @@ main {
           align-items: center;
 }
 
+@media screen and (max-width: 750px) {
+  .languages__element {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .languages__element:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -542,8 +591,15 @@ main {
 
 .education {
   position: relative;
-  padding-left: 30px;
   margin-bottom: 30px;
+  text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+  .education {
+    text-align: start;
+    padding-left: 30px;
+  }
 }
 
 .education__title {
@@ -587,5 +643,42 @@ main {
   font-size: 14px;
   font-weight: 400;
   color: #787878;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #865a3e;
+}
+
+.footer__ss-list {
+  height: 100%;
+  width: 100%;
+}
+
+.footer__ss-element:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer__ss-radius {
+  width: 20px;
+  height: 20px;
+  background-color: #b29271;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.footer__ss-icon {
+  width: 14px;
+  height: 15px;
+  fill: #865a3e;
+}
+
+.footer__ss-text {
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fefefe;
 }
 /*# sourceMappingURL=main.css.map */

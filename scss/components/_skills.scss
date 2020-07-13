@@ -1,7 +1,12 @@
 .skills{
     position: relative;
-    padding-left: 30px;
     margin-bottom: 30px;
+    text-align: center;
+
+    @media screen and (min-width:750px){
+        text-align: start;
+        padding-left: 30px;
+    }
 }
 
 .skills__title{
@@ -45,6 +50,10 @@
 .languages__element{
     display: flex;
     align-items: center;
+
+    @media screen and (max-width:750px){
+        justify-content: center;
+    }
 }
 
 .languages__element:not(:last-child){
