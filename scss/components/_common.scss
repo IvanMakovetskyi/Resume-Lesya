@@ -1,0 +1,16 @@
+.content{    
+    background-color: #d4d4d4;
+    @media screen and (min-width: 750px){
+        display: flex;
+    }
+}
+
+main{
+    padding: 30px;
+}
+
+.flex{
+    @media screen and (min-width: 750px){
+        display: flex;
+    }
+}

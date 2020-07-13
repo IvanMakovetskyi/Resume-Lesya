@@ -1,0 +1,70 @@
+.sidebar{
+    background-image: linear-gradient(to top, #191819 0%, #191819 88.16640000000001%, rgba(25, 24, 25, 0) 100%);
+    @media screen and (min-width: 750px){
+        width: 300px;
+    }
+
+    @media screen and (min-width: 1000px){
+        width: 400px;
+    }
+}
+
+.sidebar__photo{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.me{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.me__name{
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: bold;
+
+    margin-bottom: 9px;
+
+    color: $main-text-color;
+}
+
+.me__profession{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+
+    margin-bottom: 30px;
+
+    color: $white-color;
+}
+
+.contacts__element{
+    width: 245px;
+    text-align: start;
+    margin: 0 auto;
+}
+
+.contacts__element:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.contacts__icon{
+    width: 20px;
+    height: 20px;
+
+    margin-right: 15px;
+
+    fill: $main-text-color;
+}
+
+.contacts__link{
+    font-size: 14px;
+    font-weight: bold;
+
+    color: $white-color;
+}
