@@ -295,6 +295,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .content {
+  position: relative;
   background-color: #d4d4d4;
 }
 
@@ -381,6 +382,12 @@ main {
 }
 
 .contacts__element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 245px;
   text-align: start;
   margin: 0 auto;
@@ -415,6 +422,75 @@ main {
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #ffffff;
+}
+
+.content__lang {
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  right: 20px;
+  color: #4F3833;
+}
+
+.content__lang.is-open {
+  background-color: #865a3e;
+}
+
+.lang__btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  color: #4F3833;
+  background-color: #b9b9b9;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.lang__btn.is-open {
+  color: #ffffff;
+  background-color: #865a3e;
+}
+
+.lang__btn:hover,
+.lang__btn:focus {
+  outline: none;
+  color: #ffffff;
+  background-color: #865a3e;
+}
+
+.langs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  height: 1px;
+  padding: 10px 0;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.langs.is-open {
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+
+.lang {
+  color: #ffffff;
+}
+
+.lang:not(:last-child) {
+  margin-bottom: 5px;
 }
 
 .about-me {

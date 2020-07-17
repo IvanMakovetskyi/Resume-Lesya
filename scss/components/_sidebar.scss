@@ -44,6 +44,8 @@
 }
 
 .contacts__element{
+    display: flex;
+    align-items: center;
     width: 245px;
     text-align: start;
     margin: 0 auto;
