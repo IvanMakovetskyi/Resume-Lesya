@@ -78,11 +78,32 @@
     background-color: #865a3e;
 }
 
-.languages__progress::after{
+.languages__progress-80::after{
     content: "";
     position: absolute;
-    width: 70%;
     height: 100%;
+    width: 80%;
+    left: 0;
+
+    background-color: $main-text-color;
+}
+
+.languages__progress-65::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 65%;
+    left: 0;
+
+    background-color: $main-text-color;
+}
+
+.languages__progress-25::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    left: 0;
 
     background-color: $main-text-color;
 }
